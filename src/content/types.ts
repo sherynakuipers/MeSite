@@ -100,6 +100,53 @@ export interface SiteMeta {
   description: string;
 }
 
+export interface WalkthroughStep {
+  title: string;
+  /** Short, single-sentence beats shown one at a time so no single screen is a long read. */
+  body: string[];
+}
+
+export interface QuizQuestion {
+  question: string;
+  options: [string, string, string, string];
+  correctIndex: number;
+  funFact: string;
+}
+
+export interface WalkthroughContent {
+  triggerLabel: string;
+  exitLabel: string;
+  continueLabel: string;
+  backLabel: string;
+  professionalEyebrow: string;
+  professionalSteps: WalkthroughStep[];
+  hookEyebrow: string;
+  hookTitle: string;
+  hookSubtitle: string;
+  hookCta: string;
+  privateEyebrow: string;
+  privateSteps: WalkthroughStep[];
+  quizEyebrow: string;
+  quizIntroTitle: string;
+  quizIntroSubtitle: string;
+  quizImageDisclaimer: string;
+  quizStartLabel: string;
+  /** Template with `{current}` and `{total}` placeholders, e.g. "Question {current} of {total}". */
+  quizQuestionLabel: string;
+  quizQuestions: [QuizQuestion, QuizQuestion, QuizQuestion, QuizQuestion, QuizQuestion];
+  quizNextLabel: string;
+  quizSeeResultLabel: string;
+  quizResultGood: string;
+  quizResultOk: string;
+  quizResultLow: string;
+  outroEyebrow: string;
+  outroTitle: string;
+  outroSubtitle: string;
+  outroLinkedinLabel: string;
+  outroBackLabel: string;
+  outroRestartLabel: string;
+}
+
 export interface PageContent {
   meta: SiteMeta;
   nav: NavContent;
@@ -112,4 +159,5 @@ export interface PageContent {
   faq: FaqContent;
   contact: ContactContent;
   footer: FooterContent;
+  walkthrough: WalkthroughContent;
 }

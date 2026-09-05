@@ -1,6 +1,6 @@
 # MeSite
 
-Personal portfolio / about-me website for myself, Sheryna Kuipers. Built on top of MUI's Marketing Page template, restyled with a custom green theme derived from a personal banner image. The website is available in English and Dutch.
+Personal portfolio / about-me website for myself, Sheryna Kuipers. Built on top of MUI's Marketing Page template, restyled with a custom green theme derived from a personal banner image. The website is available in English and Dutch, and includes an animated "walkthrough" of my professional and private life, complete with a reptile & amphibian quiz.
 
 ## Tech stack
 
@@ -11,6 +11,7 @@ Personal portfolio / about-me website for myself, Sheryna Kuipers. Built on top 
 | UI library | MUI (Material UI) v9              |
 | Styling    | Emotion, via `styled()` (no `sx`) |
 | Build tool | Vite                              |
+| Animation  | Framer Motion                     |
 | Linting    | ESLint (flat config) + Prettier   |
 | CI         | GitHub Actions                    |
 
@@ -57,12 +58,16 @@ public/
   Banner.jpg              Source banner the site's colors/portrait were derived from
   portrait.png            Portrait cropped from the banner, used in the Hero and header/footer logo
   favicon.png             Favicon cropped from the banner's watering-can illustration
+  quiz/                   Cropped reptile & amphibian illustrations used by the walkthrough's quiz
 src/
   App.tsx                 Application root — renders AboutMePage
   main.tsx                React entry point
   about-me/                The live site
     AboutMePage.tsx         Assembles every section, in order
     components/             One component per section/UI element
+      Walkthrough.tsx          The "Take The Walkthrough" full-screen experience (see below)
+      WalkthroughQuiz.tsx       The quiz phase of the walkthrough
+      WalkthroughEffects.tsx    Animated background, phase "chapter card", confetti
   content/                 Editable copy — see "Editing content" below
     types.ts                 Shape of the page's content
     en.ts / nl.ts             English and Dutch copy
@@ -93,6 +98,7 @@ Nearly everything on the page is data-driven and duplicated across two files, `s
 | Skills tiers (Frontend/Backend/Tools) | `skills` in `en.ts` / `nl.ts`                                                            |
 | Recommendations/testimonials          | `recommendations` in `en.ts` / `nl.ts` — the section stays hidden while `items` is empty |
 | FAQ questions and answers             | `faq` in `en.ts` / `nl.ts`                                                               |
+| Walkthrough steps and quiz            | `walkthrough` in `en.ts` / `nl.ts` (see "The walkthrough" below)                         |
 | Contact section copy                  | `contact` in `en.ts` / `nl.ts`                                                           |
 | Footer bio and copyright name         | `footer` in `en.ts` / `nl.ts`                                                            |
 | LinkedIn / GitHub URLs                | `src/content/socialLinks.ts` (not translated)                                            |
@@ -100,6 +106,17 @@ Nearly everything on the page is data-driven and duplicated across two files, `s
 | Page title/description (SEO)          | `meta` in `en.ts` / `nl.ts`, and `index.html` for the static fallback                    |
 
 Each section in `AboutMePage.tsx` is a single line, delete a line (and its neighbouring `Divider`) to remove that section entirely.
+
+## The walkthrough
+
+The "Take The Walkthrough" button in the hero opens a full-screen, animated tour, built with [Framer Motion](https://www.framer.com/motion/). It runs through a fixed sequence: a professional phase (tech stack, experience, strengths, skills, ambition), a "Plot Twist" interstitial, a private phase (basketball, the Women in Tech association attempt, reptile & amphibian fandom), a 5-question reptile/amphibian quiz, and a scored outro with a LinkedIn CTA.
+
+It's implemented across three components: `Walkthrough.tsx` (phases, steps, progress bar), `WalkthroughQuiz.tsx` (the quiz phase), and `WalkthroughEffects.tsx` (animated background, the phase "chapter card", confetti).
+
+Content lives in the `walkthrough` block of `en.ts`/`nl.ts` (see `WalkthroughStep` and `QuizQuestion` in `types.ts`):
+
+- `professionalSteps` / `privateSteps` are each an array of topics, and each topic's `body` is an array of short, single-sentence beats rather than one paragraph. Every beat gets its own screen and auto-advances after a few seconds (scaled to its word count), so no screen is a long read.
+- `quizQuestions` is a fixed-length tuple of 5 questions, each with 4 `options`, a `correctIndex`, and a `funFact` shown after answering. The illustration for each question is matched by array order to the images in `public/quiz/`.
 
 ## Theming
 

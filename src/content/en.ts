@@ -178,6 +178,146 @@ const en: PageContent = {
     bio: 'Full-stack developer who loves building intuitive software with real-world impact.',
     copyrightName: 'Sheryna Kuipers',
   },
+  walkthrough: {
+    triggerLabel: 'Take The Walkthrough',
+    exitLabel: 'Exit Walkthrough',
+    continueLabel: 'Continue',
+    backLabel: 'Back',
+    professionalEyebrow: 'Professional Me',
+    professionalSteps: [
+      {
+        title: 'Tools & Technologies',
+        body: [
+          "I'm a full-stack engineer through and through.",
+          'React, Angular, TypeScript, Python, FastAPI, Docker and C# are my daily tools.',
+          "I'm just as comfortable in the backend as I am in the browser.",
+        ],
+      },
+      {
+        title: 'On The Job',
+        body: [
+          'At Onesurance I build features across the stack as the main frontend developer.',
+          'Before that, I handled support tickets at Sirrus and built a form tool for the National Police.',
+          'I love project management chats and multidisciplinary discussions just as much as code.',
+        ],
+      },
+      {
+        title: 'What I Bring To A Team',
+        body: [
+          "I'm a team player, a clear communicator and someone who likes structure.",
+          'I take full ownership, from idea to delivery.',
+          "I love thinking along on UX and UI, though designing from scratch isn't my thing.",
+        ],
+      },
+      {
+        title: 'Skills',
+        body: [
+          'On the frontend, I reach for Angular, React and TypeScript.',
+          "On the backend, it's FastAPI, Django, Python, SQL and SQLAlchemy doing the heavy lifting.",
+          'Docker, Git and a bit of CI/CD keep things running behind the scenes.',
+          'That said, I do have a soft spot for the frontend.',
+        ],
+      },
+      {
+        title: 'Always Leveling Up',
+        body: [
+          "I love to learn and I'm eager to prove it.",
+          "Ambitious doesn't begin to cover it.",
+          "As far as I'm concerned, the ceiling simply doesn't exist.",
+        ],
+      },
+    ],
+    hookEyebrow: 'Plot Twist',
+    hookTitle: "That's the CV version. Ready to meet the real me?",
+    hookSubtitle:
+      "Same person, but more basketball and more reptiles. Not your thing? No hard feelings, the exit button up top won't judge. Otherwise, let's continue.",
+    hookCta: 'Show Me More',
+    privateEyebrow: 'Private Me',
+    privateSteps: [
+      {
+        title: 'A Decade On The Court',
+        body: [
+          "I've been playing basketball for ten years.",
+          'One of those years I coached a U14 girls team.',
+          'I loved absolutely every minute of it.',
+        ],
+      },
+      {
+        title: 'Women In Tech, Rotterdam Academy',
+        body: [
+          'A year after graduating, three other students and I tried something new.',
+          'We started a study association: Women in Tech at Rotterdam Academy.',
+          "We hosted a networking event and workshops, but it didn't get enough traction to continue.",
+          'Still proud we tried.',
+        ],
+      },
+      {
+        title: 'A Room Full Of Reptiles',
+        body: [
+          "I'm a huge fan of reptiles and amphibians.",
+          'In my free time I fall down YouTube rabbit holes about them.',
+          "If I could, I'd have a whole room full of them at home.",
+          "Let's see how much you know about these amazing animals.",
+        ],
+      },
+    ],
+    quizEyebrow: 'Quiz Time',
+    quizIntroTitle: "Let's test your reptile and amphibian knowledge.",
+    quizIntroSubtitle: "Five questions. No pressure. Let's see how you do.",
+    quizImageDisclaimer:
+      "Small disclaimer: the reptile pictures are not exactly award winning. It's the best I could find this quickly, I promise.",
+    quizStartLabel: "Let's Play",
+    quizQuestionLabel: 'Question {current} of {total}',
+    quizQuestions: [
+      {
+        question: 'Which of these is not actually a reptile?',
+        options: ['Chameleon', 'Salamander', 'Gecko', 'Iguana'],
+        correctIndex: 1,
+        funFact:
+          "Salamanders are amphibians, not reptiles. Their skin is smooth and damp, while a reptile's skin is dry and scaly.",
+      },
+      {
+        question: 'What is a baby frog called before it fully transforms?',
+        options: ['Nymph', 'Tadpole', 'Fry', 'Pup'],
+        correctIndex: 1,
+        funFact:
+          'Tadpoles breathe through gills and live in water. Later they grow legs and lungs to live on land.',
+      },
+      {
+        question: 'Which reptile can regrow its tail after losing it?',
+        options: ['Crocodile', 'Tortoise', 'Gecko', 'Snake'],
+        correctIndex: 2,
+        funFact:
+          'Geckos can drop their tail to escape a predator. Then they simply grow a new one.',
+      },
+      {
+        question: 'Axolotls, famous for regenerating limbs, are a type of:',
+        options: ['Lizard', 'Salamander', 'Fish', 'Frog'],
+        correctIndex: 1,
+        funFact:
+          'Axolotls are salamanders. They usually keep their gills and stay in water their whole life.',
+      },
+      {
+        question: 'Which of these snakes is venomous?',
+        options: ['Corn Snake', 'Ball Python', 'King Cobra', 'Milk Snake'],
+        correctIndex: 2,
+        funFact:
+          "The king cobra is the world's longest venomous snake. It can grow more than five meters long.",
+      },
+    ],
+    quizNextLabel: 'Next Question',
+    quizSeeResultLabel: 'See My Score',
+    quizResultGood: 'Five for five. You clearly know your reptiles and amphibians.',
+    quizResultOk: 'A solid score. You know more than most people do.',
+    quizResultLow:
+      'Not bad for a first try. Now you know a bit more than you did five minutes ago.',
+    outroEyebrow: "That's Me",
+    outroTitle: 'Want to get to know me more?',
+    outroSubtitle: "Connect with me on LinkedIn and let's have a chat!",
+    outroLinkedinLabel: 'Connect On LinkedIn',
+    outroBackLabel: 'Back To About Me',
+    outroRestartLabel: 'Restart Walkthrough',
+  },
 };
 
 export default en;

@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { useContent } from '../../content';
+import Walkthrough from './Walkthrough';
 
 const HeroSection = styled(Box)(({ theme }) => ({
   width: '100%',
@@ -27,12 +28,12 @@ const HeroContainer = styled(Container)(({ theme }) => ({
   alignItems: 'center',
   gap: theme.spacing(4),
   paddingTop: theme.spacing(14),
-  paddingBottom: theme.spacing(10),
+  paddingBottom: theme.spacing(3),
   [theme.breakpoints.up('sm')]: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingTop: theme.spacing(20),
-    paddingBottom: theme.spacing(14),
+    paddingBottom: theme.spacing(4),
   },
 }));
 
@@ -103,6 +104,16 @@ const PortraitImage = styled('img')({
   objectPosition: 'center 30%',
 });
 
+const WalkthroughRow = styled(Box)(({ theme }) => ({
+  position: 'relative',
+  display: 'flex',
+  justifyContent: 'center',
+  paddingBottom: theme.spacing(2),
+  [theme.breakpoints.up('sm')]: {
+    paddingBottom: theme.spacing(2.5),
+  },
+}));
+
 export default function Hero() {
   const { hero } = useContent();
 
@@ -127,6 +138,9 @@ export default function Hero() {
           <PortraitImage src="/portrait.png" alt={hero.name} />
         </PortraitFrame>
       </HeroContainer>
+      <WalkthroughRow>
+        <Walkthrough />
+      </WalkthroughRow>
     </HeroSection>
   );
 }
