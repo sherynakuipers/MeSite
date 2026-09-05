@@ -190,48 +190,86 @@ const nl: PageContent = {
     professionalSteps: [
       {
         title: 'Tools & Technologieën',
-        body: 'Ik ben een full-stack engineer die zich thuis voelt in React, Angular, TypeScript, Python, FastAPI, Docker en C#. Ik werk overal in de stack met plezier, maar als ik mag kiezen ga ik toch het liefst richting de frontend.',
+        body: [
+          'Ik ben door en door een full-stack engineer.',
+          'React, Angular, TypeScript, Python, FastAPI, Docker en C# zijn mijn dagelijkse gereedschap.',
+          'Ik voel me net zo thuis in de backend als in de browser.',
+        ],
       },
       {
         title: 'Aan Het Werk',
-        body: 'Bij Onesurance bouw en onderhoud ik features door de hele stack heen, als voornaamste ontwikkelaar op de frontend. Daarvoor ondersteunde ik B2B klanten bij Sirrus en bouwde ik een intern formulieren-bouwtool voor de Nationale Politie tijdens mijn afstudeerstage. Ik vind het net zo leuk om aan te schuiven bij projectmanagement en multidisciplinaire discussies als om code te schrijven.',
+        body: [
+          'Bij Onesurance bouw ik features door de hele stack heen, als voornaamste frontend ontwikkelaar.',
+          'Daarvoor behandelde ik supporttickets bij Sirrus en bouwde ik een formuliertool voor de Nationale Politie.',
+          'Ik vind projectmanagement gesprekken en multidisciplinaire discussies net zo leuk als code schrijven.',
+        ],
       },
       {
         title: 'Wat Ik Meebreng In Een Team',
-        body: 'Teamplayer. Duidelijke communicator. Gestructureerd. Iemand die eigenaarschap neemt van idee tot oplevering. Ik denk vooral heel graag mee over UX en UI keuzes en kom met aanbevelingen, ook al is iets vanaf nul ontwerpen echt niets voor mij.',
+        body: [
+          'Ik ben een teamplayer, een duidelijke communicator en iemand die van structuur houdt.',
+          'Ik neem volledig eigenaarschap, van idee tot oplevering.',
+          'Ik denk graag mee over UX en UI, al is iets vanaf nul ontwerpen niet mijn ding.',
+        ],
       },
       {
         title: 'Vaardigheden',
-        body: 'Frontend: Angular, React, TypeScript, JavaScript, HTML, CSS en Blazor. Backend: FastAPI, Django, Flask, Python, SQL en C#. Tools: Docker, Git en basis CI/CD. Mijn hart ligt nog steeds bij de frontend.',
+        body: [
+          'Op de frontend grijp ik naar Angular, React en TypeScript.',
+          'Op de backend doen FastAPI, Django, Python, SQL en SQLAlchemy het zware werk.',
+          'Docker, Git en een beetje CI/CD houden alles achter de schermen draaiende.',
+          'Al heb ik wel een zwak voor de frontend.',
+        ],
       },
       {
         title: 'Altijd Aan Het Groeien',
-        body: 'Ik leer graag en ben er scherp op om dat te bewijzen. Ambitieus is nog zacht uitgedrukt: wat mij betreft bestaat er geen plafond.',
+        body: [
+          'Ik leer graag en ben er scherp op om dat te bewijzen.',
+          'Ambitieus is nog zacht uitgedrukt.',
+          'Wat mij betreft bestaat er geen plafond.',
+        ],
       },
     ],
     hookEyebrow: 'Plot Twist',
-    hookTitle: 'Dat Was De Cv Versie. Klaar Om De Echte Mij Te Ontmoeten?',
+    hookTitle: 'Dat was de cv-versie. Klaar om de echte mij te ontmoeten?',
     hookSubtitle:
-      "Zelfde persoon, aanzienlijk meer basketbal en aanzienlijk meer reptielen. Laten we verdergaan.",
+      'Zelfde persoon, maar meer basketbal en meer reptielen. Niet jouw ding? Geen probleem, de knop rechtsboven oordeelt niet. Anders: laten we verdergaan.',
     hookCta: 'Laat Maar Zien',
     privateEyebrow: 'Privé',
     privateSteps: [
       {
         title: 'Tien Jaar Op Het Veld',
-        body: 'Ik speel al tien jaar basketbal. Eén van die jaren coachte ik een U14 meisjesteam en ik heb ontzettend genoten van elke minuut.',
+        body: [
+          'Ik speel al tien jaar basketbal.',
+          'Eén van die jaren coachte ik een U14 meisjesteam.',
+          'Ik heb ontzettend genoten van elke minuut.',
+        ],
       },
       {
         title: 'Women In Tech, Rotterdam Academy',
-        body: 'Een jaar nadat ik al was afgestudeerd, probeerden drie andere studenten en ik een studievereniging op te richten genaamd Women in Tech aan de Rotterdam Academy. We organiseerden een netwerkevent en een paar workshops. Het kreeg niet genoeg animo onder studenten om door te gaan, maar ik ben nog steeds trots dat we het geprobeerd hebben.',
+        body: [
+          'Een jaar na mijn afstuderen probeerden drie andere studenten en ik iets nieuws.',
+          'We richtten een studievereniging op: Women in Tech aan de Rotterdam Academy.',
+          'We organiseerden een netwerkevent en workshops, maar het kreeg niet genoeg animo om door te gaan.',
+          'Nog steeds trots dat we het probeerden.',
+        ],
       },
       {
         title: 'Een Kamer Vol Reptielen',
-        body: "Ik ben een groot fan van reptielen en amfibieën. In mijn vrije tijd kijk ik graag YouTube video's over ze en als het aan mij lag had ik thuis een hele kamer vol met ze. Even iets anders: laten we kijken hoeveel je écht weet.",
+        body: [
+          'Ik ben een groot fan van reptielen en amfibieën.',
+          'In mijn vrije tijd val ik graag in een YouTube-gat over ze.',
+          'Als het aan mij lag, had ik thuis een hele kamer vol met ze.',
+          'Laten we kijken hoeveel jij weet over deze fantastische diertjes.',
+        ],
       },
     ],
     quizEyebrow: 'Quiztijd',
-    quizIntroTitle: 'Test Je Kennis Over Reptielen En Amfibieën',
+    quizIntroTitle: 'Laten we je kennis over reptielen en amfibieën testen.',
     quizIntroSubtitle: 'Vijf vragen. Geen druk. Laten we kijken hoe je het doet.',
+    quizImageDisclaimer:
+      'Kleine disclaimer: de reptielenplaatjes zijn niet bepaald award winning. Het beste wat ik zo snel kon vinden, beloofd.',
+    quizStartLabel: 'Start De Quiz',
     quizQuestionLabel: 'Vraag {current} van {total}',
     quizQuestions: [
       {
@@ -239,45 +277,47 @@ const nl: PageContent = {
         options: ['Kameleon', 'Salamander', 'Gekko', 'Leguaan'],
         correctIndex: 1,
         funFact:
-          'Salamanders zijn amfibieën. Hun vochtige doorlaatbare huid verraadt ze naast de droge schubbige huid van een reptiel.',
+          'Salamanders zijn amfibieën, geen reptielen. Hun huid is glad en vochtig, terwijl de huid van een reptiel droog en schubbig is.',
       },
       {
         question: 'Hoe heet een babykikker voordat hij helemaal is veranderd?',
         options: ['Nimf', 'Kikkervisje', 'Larve', 'Pup'],
         correctIndex: 1,
         funFact:
-          "Kikkervisjes ademen door kieuwen en leven in het water voordat ze veranderen in luchtademende volwassenen.",
+          'Kikkervisjes ademen door kieuwen en leven in het water. Later krijgen ze pootjes en longen om op het land te leven.',
       },
       {
-        question: 'Welk reptiel kan zijn staart laten teruggroeien nadat hij die kwijtraakt?',
+        question:
+          'Welk reptiel kan zijn staart laten teruggroeien nadat hij die kwijtraakt?',
         options: ['Krokodil', 'Schildpad', 'Gekko', 'Slang'],
         correctIndex: 2,
         funFact:
-          'Dit heet autotomie. Een gekko laat zijn staart los om aan een roofdier te ontsnappen en laat er na verloop van tijd een nieuwe groeien.',
+          "Gekko's kunnen hun staart laten los om aan een roofdier te ontsnappen. Daarna groeit er gewoon een nieuwe.",
       },
       {
         question: 'Axolotls, bekend om het regenereren van ledematen, zijn een soort:',
-        options: ['Hagedis', 'Salamander', 'Watersalamander', 'Kikker'],
+        options: ['Hagedis', 'Salamander', 'Vis', 'Kikker'],
         correctIndex: 1,
         funFact:
-          'Axolotls zijn salamanders die meestal hun kieuwen en hun waterbestaan hun hele leven behouden.',
+          'Axolotls zijn salamanders. Ze houden meestal hun kieuwen en blijven hun hele leven in het water.',
       },
       {
         question: 'Welke van deze slangen is giftig?',
         options: ['Maïsslang', 'Koningspython', 'Koningscobra', 'Melkslang'],
         correctIndex: 2,
         funFact:
-          "De koningscobra is 's werelds langste giftige slang en kan meer dan vijf meter lang worden.",
+          "De koningscobra is 's werelds langste giftige slang. Hij kan meer dan vijf meter lang worden.",
       },
     ],
     quizNextLabel: 'Volgende Vraag',
     quizSeeResultLabel: 'Bekijk Mijn Score',
-    quizResultGood: 'Vijf van de vijf. Jij kent je reptielen en amfibieën duidelijk goed.',
+    quizResultGood:
+      'Vijf van de vijf. Jij kent je reptielen en amfibieën duidelijk goed.',
     quizResultOk: 'Een prima score. Je weet meer dan de meeste mensen.',
     quizResultLow:
       'Niet slecht voor een eerste poging. Je weet nu net iets meer dan vijf minuten geleden.',
     outroEyebrow: 'Dat Ben Ik',
-    outroTitle: 'Wil Je Me Nog Beter Leren Kennen?',
+    outroTitle: 'Wil je me nog beter leren kennen?',
     outroSubtitle: 'Verbind met me op LinkedIn en laten we een keer kletsen!',
     outroLinkedinLabel: 'Verbind Op LinkedIn',
     outroBackLabel: 'Terug Naar About Me',

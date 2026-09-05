@@ -102,7 +102,8 @@ export interface SiteMeta {
 
 export interface WalkthroughStep {
   title: string;
-  body: string;
+  /** Short, single-sentence beats shown one at a time so no single screen is a long read. */
+  body: string[];
 }
 
 export interface QuizQuestion {
@@ -128,6 +129,8 @@ export interface WalkthroughContent {
   quizEyebrow: string;
   quizIntroTitle: string;
   quizIntroSubtitle: string;
+  quizImageDisclaimer: string;
+  quizStartLabel: string;
   /** Template with `{current}` and `{total}` placeholders, e.g. "Question {current} of {total}". */
   quizQuestionLabel: string;
   quizQuestions: [QuizQuestion, QuizQuestion, QuizQuestion, QuizQuestion, QuizQuestion];
