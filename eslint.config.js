@@ -7,7 +7,7 @@ import prettier from 'eslint-config-prettier/flat';
 import { globalIgnores } from 'eslint/config';
 
 export default tseslint.config([
-  globalIgnores(['dist', 'node_modules']),
+  globalIgnores(['dist', 'node_modules', 'src/marketing-page', 'src/shared-theme']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [

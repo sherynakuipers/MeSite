@@ -118,10 +118,7 @@ export function MobileLayout({
           }
         />
         <Box sx={{ px: 2, pb: 2 }}>
-          <Typography
-            gutterBottom
-            sx={{ color: 'text.primary', fontWeight: 'medium' }}
-          >
+          <Typography gutterBottom sx={{ color: 'text.primary', fontWeight: 'medium' }}>
             {selectedFeature.title}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary', mb: 1.5 }}>
@@ -157,9 +154,8 @@ export default function Features() {
           variant="body1"
           sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
         >
-          Provide a brief overview of the key features of the product. For example,
-          you could list the number of features, their types or benefits, and
-          add-ons.
+          Provide a brief overview of the key features of the product. For example, you
+          could list the number of features, their types or benefits, and add-ons.
         </Typography>
       </Box>
       <Box

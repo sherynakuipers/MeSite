@@ -85,10 +85,9 @@ export default function Pricing() {
           Pricing
         </Typography>
         <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-          Quickly build an effective pricing table for your potential customers with
-          this layout. <br />
-          It&apos;s built with default Material UI components with little
-          customization.
+          Quickly build an effective pricing table for your potential customers with this
+          layout. <br />
+          It&apos;s built with default Material UI components with little customization.
         </Typography>
       </Box>
       <Grid
@@ -133,9 +132,7 @@ export default function Pricing() {
                       alignItems: 'center',
                       gap: 2,
                     },
-                    tier.title === 'Professional'
-                      ? { color: 'grey.100' }
-                      : { color: '' },
+                    tier.title === 'Professional' ? { color: 'grey.100' } : { color: '' },
                   ]}
                 >
                   <Typography component="h3" variant="h6">
