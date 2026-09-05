@@ -47,6 +47,13 @@ const NavGroup = styled(Box)(({ theme }) => ({
   gap: theme.spacing(3),
 }));
 
+const LogoLink = styled('a')({
+  display: 'flex',
+  lineHeight: 0,
+  color: 'inherit',
+  textDecoration: 'none',
+});
+
 const DesktopNavLinks = styled(Box)(({ theme }) => ({
   display: 'none',
   [theme.breakpoints.up('md')]: {
@@ -107,7 +114,6 @@ export default function SiteHeader() {
     { label: nav.experience, href: '#experience' },
     { label: nav.strengths, href: '#strengths' },
     { label: nav.skills, href: '#skills' },
-    { label: nav.recommendations, href: '#recommendations' },
     { label: nav.faq, href: '#faq' },
     { label: nav.contact, href: '#contact' },
   ];
@@ -117,7 +123,9 @@ export default function SiteHeader() {
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
           <NavGroup>
-            <Logo />
+            <LogoLink href="#hero" aria-label="Back to top">
+              <Logo />
+            </LogoLink>
             <DesktopNavLinks>
               {navLinks.map((link) => (
                 <Button
